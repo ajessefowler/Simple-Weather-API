@@ -1,7 +1,11 @@
 const express = require('express');
 const routes = require('./routes/routes.js');
 const app = express();
-const port = process.env.PORT || 3000;
+let port = process.env.PORT;
+
+if (port == null || port =='') {
+    port = 8000;
+}
 
 routes(app);
 
