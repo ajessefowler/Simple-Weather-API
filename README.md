@@ -8,7 +8,7 @@ You must provide a Dark Sky API key to be able to use this application. To use t
 
 ## Running Locally
 
-After cloning or downloading, change directory to the Simple-Weather-API directory.
+After cloning or downloading, you must first add your Dark Sky API. In routes/routes.js, set the key variable to your Dark Sky key. Then, run the following command in the Simple Weather API directory to start the server.
 
 ```
 node index.js
@@ -22,10 +22,10 @@ localhost:3000/?lat=40&lng=-90
 
 ## Deploying to Heroku
 
+Be sure to remove your Dark Sky API key from the application and replace it with an environment variable.
+
 ```
 heroku create
 git push heroku master
 ```
-
-Be sure to add your Dark Sky API key to the environment variables.
 
