@@ -1,6 +1,6 @@
 const request = require('request');
 
-const key = '014160f48f5c2882a6f60dcbeb59425e';
+const key = process.env.DARK_SKY_KEY;
 const url = 'https://api.darksky.net/forecast/' + key + '/';
 
 const appRouter = function (app) {
